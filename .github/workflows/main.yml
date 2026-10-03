@@ -1,0 +1,55 @@
+
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Install Cordova
+        run: npm install -g cordova
+
+      - name: Create Android project
+        run: |
+          cordova create android-app com.deovumilia.gestion "Gestion Scolaire"
+          cd android-app
+          cordova platform add android
+
+      - name: Copy application files
+        run: |
+          rm -rf android-app/www/*
+          cp index.html android-app/www/
+          cp manifest.webmanifest android-app/www/
+          cp sw.js android-app/www/
+          cp -r *.png *.webp android-app/www/ 2>/dev/null || true
+
+      - name: Build APK
+        run: |
+          cd android-app
+          cordova build android --debug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Gestion-Scolaire-APK
+          path: android-app/platforms/android/app/build/outputs/apk/debug/app-debug.apk
