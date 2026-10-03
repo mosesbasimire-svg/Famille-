@@ -1,18 +1,21 @@
-GESTION ECOLE RDC — VERSION PWA MULTIPLATEFORME
+GESTION ÉCOLE RDC — VERSION PROPRE SUPABASE
 
-Cette version peut être installée comme application sur Android et sur ordinateur depuis un navigateur compatible, après mise en ligne en HTTPS.
+Cette version contient UN SEUL index.html à la racine.
+Elle est prévue pour GitHub Pages et peut être installée comme PWA sur téléphone et ordinateur.
 
-Fichiers importants :
-- index.html : application
-- manifest.webmanifest : identité de l'application
-- sw.js : fonctionnement hors ligne/cache
-- icon-192.png et icon-512.png : icônes
-- eleves_livres_login.webp : image des élèves sur la connexion
+SUPABASE
+1. Ouvrir Supabase > SQL Editor.
+2. Ouvrir le fichier supabase_school.sql.
+3. Copier tout son contenu dans SQL Editor puis cliquer sur Run.
+4. L'application est déjà configurée avec le projet Supabase utilisé pour cette version.
+5. Mettre les fichiers index.html, eleves_livres_login.webp et supabase_school.sql à la racine du dépôt GitHub.
 
-Installation :
-1. Mettre le dossier sur un hébergement HTTPS (GitHub Pages convient).
-2. Ouvrir le site dans Chrome/Edge.
-3. Android : menu du navigateur > Installer l'application / Ajouter à l'écran d'accueil.
-4. Ordinateur : bouton Installer l'application dans la barre d'adresse ou dans le menu du navigateur.
+IMPORTANT
+- Les données sont synchronisées dans la table public.school_state.
+- L'application conserve aussi un cache local pour continuer à fonctionner si le réseau est momentanément indisponible.
+- La clé utilisée dans le navigateur est une clé publishable/anon : la sécurité réelle doit être renforcée avant une utilisation publique avec Supabase Auth et des politiques RLS par école.
 
-IMPORTANT : cette version est une PWA. Pour que les données soient réellement partagées entre téléphone et ordinateur, il faudra connecter l'application à Supabase (base de données + stockage + authentification). Le localStorage actuel reste propre à chaque appareil/navigateur.
+PORTAIL ÉLÈVE
+Le portail est inclus dans le même index.html. Il peut être ouvert avec :
+?portail=eleve
+Ainsi, aucun deuxième index.html n'est nécessaire.
