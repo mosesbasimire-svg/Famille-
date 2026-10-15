@@ -3,49 +3,86 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#180d2b">
-<title>Une surprise royale pour Bien-aimé 🎁</title>
+<meta name="theme-color" content="#170b2c">
+<title>Une surprise royale pour Bien-aimé 👑</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="sparkle-bg" aria-hidden="true"></div>
 <main>
   <section id="welcome" class="screen active">
-    <p class="eyebrow">UNE SURPRISE DE FAMILLE</p>
-    <h1>Pour toi, <span>Bien-aimé</span></h1>
-    <p class="subtitle">Papa, Maman et ton grand frère ont préparé quelque chose de spécial…</p>
-    <button id="giftButton" class="gift-button" aria-label="Ouvrir le cadeau">
-      <span class="gift" aria-hidden="true"><span class="lid"><span class="bow"></span></span><span class="box"><span class="ribbon"></span></span></span>
-      <span class="button-label">🎁 Clique pour ouvrir ton cadeau</span>
+    <p class="eyebrow">UNE SURPRISE PRÉPARÉE AVEC AMOUR</p>
+    <h1>Pour toi,<br><span>Bien-aimé</span></h1>
+    <p class="intro">Papa, Maman et ton grand frère ont un message spécial pour toi…</p>
+    <button id="openGift" class="gift-button" aria-label="Ouvrir le cadeau">
+      <span class="gift-art" aria-hidden="true"><span class="gift-bow"></span><span class="gift-lid"></span><span class="gift-body"><span class="gift-ribbon"></span></span></span>
+      <span class="button-text">🎁 OUVRIR MON CADEAU</span>
     </button>
-    <p class="hint">Active le son pour profiter de la surprise ✨</p>
+    <p class="small-note">Appuie sur le cadeau pour commencer la surprise ✨</p>
   </section>
 
-  <section id="reveal" class="screen">
-    <div id="balloons" class="balloons" aria-hidden="true"></div>
-    <p class="eyebrow">UN MOMENT PRÉPARÉ AVEC AMOUR</p>
-    <h2>Joyeux anniversaire,<br><span>Bien-aimé !</span></h2>
-    <p class="subtitle">Aujourd'hui, tu es le roi de ton jour 👑</p>
-    <div class="family">
-      <article><img src="photos/papa.jpg" alt="Papa"><h3>Papa</h3><p>« Mon fils, que Dieu te guide, te protège et t'accorde la sagesse. Grandis dans le respect, le courage et l'amour. Joyeux anniversaire ! »</p></article>
-      <article><img src="photos/maman.jpg" alt="Maman"><h3>Maman</h3><p>« Mon Bien-aimé, tu es une joie dans ma vie. Que ton chemin soit rempli de santé, de paix et de belles réussites. Je t'aime de tout mon cœur. »</p></article>
-      <article><img src="photos/grand-frere.jpg" alt="Ton grand frère"><h3>Ton grand frère</h3><p>« Bien-aimé, aujourd'hui je veux te faire sentir combien tu es précieux pour nous. Tu es le roi de cette journée. Que tes rêves grandissent et que tu gardes toujours un bon cœur ! »</p></article>
-      <article><img src="photos/bien-aime.jpg" alt="Bien-aimé"><h3>Bien-aimé</h3><p>« Merci Papa, merci Maman, merci grand frère. Votre amour est le plus beau des cadeaux. Je vous aime et je garderai cette surprise dans mon cœur ! »</p></article>
-    </div>
-    <div class="video-frame" id="videoFrame">
-      <video id="birthdayVideo" controls playsinline preload="metadata">
-        <source src="film-bien-aime.mp4" type="video/mp4">
-      </video>
-      <div id="videoPlaceholder" class="video-placeholder">
-        <div class="crown">♛</div>
-        <h3>Le film royal de Bien-aimé</h3>
-        <p>Ajoute ici la vidéo finale sous le nom <strong>film-bien-aime.mp4</strong>.</p>
-        <p class="small">Scènes prévues : arrivée de Bien-aimé, entrée au palais, trône, arrivée du grand frère et couronnement. Les voix générées seront ajoutées au montage vidéo.</p>
+  <section id="show" class="screen">
+    <div id="confetti" aria-hidden="true"></div>
+    <p class="eyebrow">LE GRAND JOUR EST ARRIVÉ</p>
+    <h2>Joyeux anniversaire<br><span>Bien-aimé !</span></h2>
+    <p class="intro">Aujourd'hui, tu es le roi de ton jour 👑</p>
+
+    <div class="stage">
+      <div class="palace">♛ <span>LE PALAIS ROYAL</span> ♛</div>
+      <div class="scene" id="scene">
+        <div class="curtain left"></div><div class="curtain right"></div>
+        <div class="spotlight"></div>
+        <div class="throne"><div class="throne-crown">♛</div><div class="throne-back"></div><div class="throne-seat"></div><div class="throne-leg"></div></div>
+        <div class="character" id="mainCharacter">
+          <img src="photos/bien-aime.jpg" alt="Bien-aimé">
+          <div class="character-label">BIEN-AIMÉ</div>
+        </div>
+        <div class="crown-overlay" id="crownOverlay">👑</div>
+        <div class="stage-caption" id="stageCaption">Les portes du palais s'ouvrent…</div>
       </div>
     </div>
-    <p class="closing">« Les vrais rois se construisent par l'amour, le courage et la persévérance. »</p>
-    <button id="replayButton" class="secondary">Revoir la surprise ↻</button>
+
+    <div class="controls">
+      <button id="playStory" class="primary">▶ Lancer le film avec les voix</button>
+      <button id="stopStory" class="secondary">Ⅱ Pause</button>
+    </div>
+    <p id="voiceNote" class="voice-note">Les dialogues seront lus par la voix française disponible sur ton appareil.</p>
+
+    <div class="family-grid">
+      <article class="family-card">
+        <img src="photos/papa.jpg" alt="Papa">
+        <h3>Un message de Papa</h3>
+        <p>« Mon fils Bien-aimé, joyeux anniversaire ! Que Dieu te protège, te donne la sagesse et guide chacun de tes pas. Grandis dans le respect, le courage et l'amour. Nous sommes fiers de toi. »</p>
+        <button class="say" data-speaker="papa">🔊 Écouter Papa</button>
+      </article>
+      <article class="family-card">
+        <img src="photos/maman.jpg" alt="Maman">
+        <h3>Un message de Maman</h3>
+        <p>« Mon Bien-aimé, tu es une grande joie dans ma vie. Que cette nouvelle année t'apporte la santé, la paix, la sagesse et de belles réussites. N'oublie jamais que tu es aimé. »</p>
+        <button class="say" data-speaker="maman">🔊 Écouter Maman</button>
+      </article>
+      <article class="family-card">
+        <img src="photos/grand-frere.jpg" alt="Ton grand frère">
+        <h3>Le message du grand frère</h3>
+        <p>« Bien-aimé, tu es précieux pour moi et pour toute notre famille. Poursuis tes rêves avec courage et garde toujours un bon cœur. Aujourd'hui, tu es le roi de ton jour ! »</p>
+        <button class="say" data-speaker="frere">🔊 Écouter le grand frère</button>
+      </article>
+      <article class="family-card">
+        <img src="photos/bien-aime.jpg" alt="Bien-aimé">
+        <h3>La réponse de Bien-aimé</h3>
+        <p>« Merci Papa, merci Maman, merci grand frère. Votre amour est le plus beau des cadeaux. Je vous aime et je garderai cette surprise dans mon cœur ! »</p>
+        <button class="say" data-speaker="bien">🔊 Écouter Bien-aimé</button>
+      </article>
+    </div>
+
+    <section class="final-message">
+      <div class="big-crown">👑</div>
+      <h2>Le couronnement royal</h2>
+      <p>« Bien-aimé, au nom de notre amour familial, je te couronne roi de cette journée. Que ton avenir soit lumineux, que Dieu te protège et que tes rêves deviennent réalité. Joyeux anniversaire ! »</p>
+      <button id="crownButton" class="primary">👑 Faire apparaître la couronne</button>
+    </section>
+    <button id="restart" class="secondary restart">↻ Recommencer la surprise</button>
   </section>
 </main>
-<audio id="birthdayMusic" loop preload="none"><source src="musique-anniversaire.mp3" type="audio/mpeg"></audio>
 <script src="script.js"></script>
 </body></html>

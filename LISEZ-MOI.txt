@@ -1,24 +1,23 @@
-PROJET WEB — SURPRISE ROYALE POUR BIEN-AIMÉ
+SURPRISE ROYALE POUR BIEN-AIMÉ — VERSION PRÊTE À PUBLIER
 
-Fichiers principaux :
-- index.html : page du cadeau, messages de famille et emplacement vidéo
-- style.css : design et animations
-- script.js : ouverture du cadeau, ballons et lecture vidéo
-- photos/ : les 4 photos que tu as envoyées
-- dialogues-film.txt : dialogues proposés pour Papa, Maman, grand frère et Bien-aimé
+Cette version contient :
+- Cadeau cliquable et ouverture animée
+- Confettis et rideaux de palais animés
+- Photos de Bien-aimé, Papa, Maman et du grand frère
+- Boutons pour écouter chaque message
+- Lecture automatique des dialogues avec la synthèse vocale du navigateur
+- Scène de marche stylisée, trône et couronne animée
 
-IMPORTANT :
-Le site est un premier prototype. Il n'inclut pas encore de vidéo parlante générée ni de musique.
-Pour intégrer le film, place le fichier MP4 dans le dossier racine et nomme-le exactement :
-film-bien-aime.mp4
-Pour la musique facultative, ajoute musique-anniversaire.mp3.
+IMPORTANT : ce prototype parle avec la synthèse vocale intégrée au navigateur, pas avec des voix enregistrées des membres de la famille. Les photos sont affichées dans la scène mais ce n'est pas encore une vidéo photoréaliste avec lèvres synchronisées. La voix française dépend du navigateur et des voix installées sur l'appareil. Sur certains navigateurs, il faut utiliser Chrome et toucher le bouton « Lancer le film avec les voix ».
 
-PUBLICATION DANS TON COMPTE GITHUB EXISTANT :
-1. Ouvre https://github.com et connecte-toi.
-2. Crée un NOUVEAU dépôt nommé surprise-bien-aime (cela ne modifie aucun de tes sites).
-3. Téléverse index.html, style.css, script.js, le dossier photos et dialogues-film.txt.
-4. Dans Settings > Pages, choisis Deploy from a branch, branche main, dossier /(root), puis Save.
-5. Après publication, le lien sera du type https://TON-NOM.github.io/surprise-bien-aime/
-   Remplace TON-NOM par ton nom d'utilisateur GitHub exact.
+PUBLIER DANS LE COMPTE GITHUB EXISTANT :
+1. Téléchargez et décompressez le ZIP.
+2. Ouvrez GitHub et connectez-vous.
+3. Créez un NOUVEAU dépôt public nommé surprise-bien-aime (ne remplacez pas vos autres sites).
+4. Téléversez tous les fichiers et le dossier photos en gardant exactement la structure.
+5. Allez dans Settings > Pages.
+6. Dans Build and deployment, choisissez Deploy from a branch, branch main, folder /(root), puis Save.
+7. Attendez quelques minutes. Le lien sera https://VOTRE-NOM.github.io/surprise-bien-aime/
+   Remplacez VOTRE-NOM par votre nom d'utilisateur GitHub.
 
-Pour un site public, toute personne ayant le lien peut voir les photos. Publie seulement si ta famille est d'accord.
+Pour partager publiquement les photos d'un enfant, assurez-vous que les parents sont d'accord.
