@@ -1,0 +1,24 @@
+PROJET WEB — SURPRISE ROYALE POUR BIEN-AIMÉ
+
+Fichiers principaux :
+- index.html : page du cadeau, messages de famille et emplacement vidéo
+- style.css : design et animations
+- script.js : ouverture du cadeau, ballons et lecture vidéo
+- photos/ : les 4 photos que tu as envoyées
+- dialogues-film.txt : dialogues proposés pour Papa, Maman, grand frère et Bien-aimé
+
+IMPORTANT :
+Le site est un premier prototype. Il n'inclut pas encore de vidéo parlante générée ni de musique.
+Pour intégrer le film, place le fichier MP4 dans le dossier racine et nomme-le exactement :
+film-bien-aime.mp4
+Pour la musique facultative, ajoute musique-anniversaire.mp3.
+
+PUBLICATION DANS TON COMPTE GITHUB EXISTANT :
+1. Ouvre https://github.com et connecte-toi.
+2. Crée un NOUVEAU dépôt nommé surprise-bien-aime (cela ne modifie aucun de tes sites).
+3. Téléverse index.html, style.css, script.js, le dossier photos et dialogues-film.txt.
+4. Dans Settings > Pages, choisis Deploy from a branch, branche main, dossier /(root), puis Save.
+5. Après publication, le lien sera du type https://TON-NOM.github.io/surprise-bien-aime/
+   Remplace TON-NOM par ton nom d'utilisateur GitHub exact.
+
+Pour un site public, toute personne ayant le lien peut voir les photos. Publie seulement si ta famille est d'accord.

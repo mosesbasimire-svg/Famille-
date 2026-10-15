@@ -1,0 +1,31 @@
+DIALOGUES DU FILM — SURPRISE POUR BIEN-AIMÉ
+
+1) BIEN-AIMÉ — arrivée au palais
+« Waouh… quel endroit magnifique ! Mais où suis-je ? Qu'est-ce qui m'attend aujourd'hui ? »
+
+2) PAPA — message de bénédiction
+« Mon fils Bien-aimé, en ce jour spécial, je te souhaite un joyeux anniversaire. Que Dieu te protège, te donne la sagesse et guide chacun de tes pas. Grandis dans le respect, le courage et l'amour. Nous sommes fiers de toi. »
+
+3) MAMAN — message tendre
+« Mon Bien-aimé, tu es une grande joie dans ma vie. Je prie pour que cette nouvelle année t'apporte la santé, la paix, la sagesse et de belles réussites. N'oublie jamais que tu es aimé. Joyeux anniversaire, mon fils ! »
+
+4) GRAND FRÈRE — entrée et couronnement
+« Bien-aimé, mon petit frère, aujourd'hui je ne viens pas seulement te souhaiter joyeux anniversaire. Je viens te rappeler que tu es précieux pour moi et pour toute notre famille. Que tu gardes toujours un cœur bon, que tu poursuives tes rêves et que tu avances avec courage. Aujourd'hui, tu es le roi de ton jour ! »
+
+[Le grand frère pose doucement la couronne sur la tête de Bien-aimé.]
+
+5) BIEN-AIMÉ — réponse
+« Merci Papa, merci Maman, merci grand frère. Votre amour est le plus beau des cadeaux. Je vous aime et je garderai cette surprise dans mon cœur. »
+
+6) MESSAGE FINAL À L'ÉCRAN
+« JOYEUX ANNIVERSAIRE, BIEN-AIMÉ !
+Que Dieu te protège, que la joie t'accompagne et que ton avenir soit rempli d'espérance.
+Avec tout notre amour : Papa, Maman et ton grand frère. »
+
+NOTES DE PRODUCTION
+- Créer les clips séparément pour garder la cohérence des visages.
+- Générer les voix françaises une par une, en choisissant une voix masculine mature pour Papa,
+  une voix féminine chaleureuse pour Maman, une voix jeune adulte pour le grand frère,
+  et une voix enfantine/jeune pour Bien-aimé.
+- Les photos incluses servent de références visuelles. Les voix et le film final ne sont pas encore générés.
+- Export final conseillé : MP4 vertical 1080 x 1920, puis le nommer film-bien-aime.mp4.

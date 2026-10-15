@@ -1,0 +1,8 @@
+const giftButton=document.getElementById("giftButton");
+const welcome=document.getElementById("welcome"),reveal=document.getElementById("reveal");
+const music=document.getElementById("birthdayMusic"),video=document.getElementById("birthdayVideo");
+const videoFrame=document.getElementById("videoFrame"),replayButton=document.getElementById("replayButton");
+function makeBalloons(){const area=document.getElementById("balloons");area.innerHTML="";const colors=["#f4c85b","#f47eae","#a88bff","#f6f0d0","#e94d72"];for(let i=0;i<28;i++){const b=document.createElement("span");b.className="balloon";b.style.left=`${Math.random()*100}%`;b.style.background=colors[i%colors.length];b.style.animationDuration=`${7+Math.random()*7}s`;b.style.animationDelay=`${Math.random()*2}s`;b.style.transform=`scale(${.7+Math.random()*.65})`;area.appendChild(b)}}
+giftButton.addEventListener("click",()=>{giftButton.classList.add("opening");try{music.volume=.3;music.play().catch(()=>{})}catch(e){}setTimeout(()=>{welcome.classList.remove("active");reveal.classList.add("active");makeBalloons();video.load();video.play().then(()=>videoFrame.classList.add("has-video")).catch(()=>{})},850)});
+replayButton.addEventListener("click",()=>{video.pause();video.currentTime=0;music.pause();music.currentTime=0;reveal.classList.remove("active");welcome.classList.add("active");giftButton.classList.remove("opening")});
+video.addEventListener("loadeddata",()=>videoFrame.classList.add("has-video"));

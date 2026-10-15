@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#180d2b">
+<title>Une surprise royale pour Bien-aimé 🎁</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section id="welcome" class="screen active">
+    <p class="eyebrow">UNE SURPRISE DE FAMILLE</p>
+    <h1>Pour toi, <span>Bien-aimé</span></h1>
+    <p class="subtitle">Papa, Maman et ton grand frère ont préparé quelque chose de spécial…</p>
+    <button id="giftButton" class="gift-button" aria-label="Ouvrir le cadeau">
+      <span class="gift" aria-hidden="true"><span class="lid"><span class="bow"></span></span><span class="box"><span class="ribbon"></span></span></span>
+      <span class="button-label">🎁 Clique pour ouvrir ton cadeau</span>
+    </button>
+    <p class="hint">Active le son pour profiter de la surprise ✨</p>
+  </section>
+
+  <section id="reveal" class="screen">
+    <div id="balloons" class="balloons" aria-hidden="true"></div>
+    <p class="eyebrow">UN MOMENT PRÉPARÉ AVEC AMOUR</p>
+    <h2>Joyeux anniversaire,<br><span>Bien-aimé !</span></h2>
+    <p class="subtitle">Aujourd'hui, tu es le roi de ton jour 👑</p>
+    <div class="family">
+      <article><img src="photos/papa.jpg" alt="Papa"><h3>Papa</h3><p>« Mon fils, que Dieu te guide, te protège et t'accorde la sagesse. Grandis dans le respect, le courage et l'amour. Joyeux anniversaire ! »</p></article>
+      <article><img src="photos/maman.jpg" alt="Maman"><h3>Maman</h3><p>« Mon Bien-aimé, tu es une joie dans ma vie. Que ton chemin soit rempli de santé, de paix et de belles réussites. Je t'aime de tout mon cœur. »</p></article>
+      <article><img src="photos/grand-frere.jpg" alt="Ton grand frère"><h3>Ton grand frère</h3><p>« Bien-aimé, aujourd'hui je veux te faire sentir combien tu es précieux pour nous. Tu es le roi de cette journée. Que tes rêves grandissent et que tu gardes toujours un bon cœur ! »</p></article>
+      <article><img src="photos/bien-aime.jpg" alt="Bien-aimé"><h3>Bien-aimé</h3><p>« Merci Papa, merci Maman, merci grand frère. Votre amour est le plus beau des cadeaux. Je vous aime et je garderai cette surprise dans mon cœur ! »</p></article>
+    </div>
+    <div class="video-frame" id="videoFrame">
+      <video id="birthdayVideo" controls playsinline preload="metadata">
+        <source src="film-bien-aime.mp4" type="video/mp4">
+      </video>
+      <div id="videoPlaceholder" class="video-placeholder">
+        <div class="crown">♛</div>
+        <h3>Le film royal de Bien-aimé</h3>
+        <p>Ajoute ici la vidéo finale sous le nom <strong>film-bien-aime.mp4</strong>.</p>
+        <p class="small">Scènes prévues : arrivée de Bien-aimé, entrée au palais, trône, arrivée du grand frère et couronnement. Les voix générées seront ajoutées au montage vidéo.</p>
+      </div>
+    </div>
+    <p class="closing">« Les vrais rois se construisent par l'amour, le courage et la persévérance. »</p>
+    <button id="replayButton" class="secondary">Revoir la surprise ↻</button>
+  </section>
+</main>
+<audio id="birthdayMusic" loop preload="none"><source src="musique-anniversaire.mp3" type="audio/mpeg"></audio>
+<script src="script.js"></script>
+</body></html>
